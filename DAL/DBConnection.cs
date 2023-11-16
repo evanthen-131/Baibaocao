@@ -18,7 +18,7 @@ namespace C_App.DAL
         public SqlConnection CreateConnection()
         {
             SqlConnection conn = new SqlConnection();
-            conn.ConnectionString = @"Data Source=DESKTOP-Q68USUA;Initial Catalog=Retail;User Id=sa;Password=sa";
+            conn.ConnectionString = @"Data Source=DESKTOP-85KHDPE\MISASME2021;Initial Catalog=Retail;Integrated Security=true";
             return conn;
         }
         

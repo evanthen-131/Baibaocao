@@ -101,7 +101,7 @@ namespace C_App.GUI
 
         private void ImportFromExcel(string filePath)
         {
-            string connectionString = "Data Source=DESKTOP-Q68USUA;Initial Catalog=Retail;User ID=sa;Password=sa";
+            string connectionString = "Data Source=DESKTOP-85KHDPE\\MISASME2021;Initial Catalog=Retail;Integrated Security=true";
 
 
             using (var package = new ExcelPackage(new FileInfo(filePath)))
@@ -321,7 +321,7 @@ namespace C_App.GUI
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            string connectionString = "Data Source=DESKTOP-Q68USUA;Initial Catalog=Retail;User ID=sa;Password=sa";
+            string connectionString = "Data Source=DESKTOP-85KHDPE\\MISASME2021;Initial Catalog=Retail;User ID=sa;Password=sa";
             string searchQuery = "SELECT * FROM Human WHERE Name LIKE @searchText";
 
             using (SqlConnection connection = new SqlConnection(connectionString))

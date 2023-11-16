@@ -12,7 +12,7 @@ namespace C_App.DAL
     {
         public bool AuthenticateUser(LoginBEL log)
         {
-            string connectionString = "Data Source=DESKTOP-Q68USUA;Initial Catalog=Retail;User ID=sa;Password=sa";
+            string connectionString = "Data Source=DESKTOP-85KHDPE\\MISASME2021;Initial Catalog=Retail;Integrated Security=true";
             string query = "SELECT COUNT(*) FROM Users WHERE username = @txtUsername AND password = @txtPassword";
 
             using (SqlConnection connection = new SqlConnection(connectionString))

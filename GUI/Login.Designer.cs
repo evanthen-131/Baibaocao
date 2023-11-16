@@ -52,9 +52,10 @@
             label1.Cursor = System.Windows.Forms.Cursors.Default;
             label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             label1.Font = new System.Drawing.Font("Microsoft YaHei", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label1.Location = new System.Drawing.Point(315, 9);
+            label1.Location = new System.Drawing.Point(472, 14);
+            label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(229, 41);
+            label1.Size = new System.Drawing.Size(342, 59);
             label1.TabIndex = 7;
             label1.Text = "Hệ thống quản lí ";
             label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -63,9 +64,10 @@
             // Logo
             // 
             this.Logo.Image = ((System.Drawing.Image)(resources.GetObject("Logo.Image")));
-            this.Logo.Location = new System.Drawing.Point(12, 15);
+            this.Logo.Location = new System.Drawing.Point(18, 23);
+            this.Logo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Logo.Name = "Logo";
-            this.Logo.Size = new System.Drawing.Size(216, 183);
+            this.Logo.Size = new System.Drawing.Size(324, 282);
             this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Logo.TabIndex = 0;
             this.Logo.TabStop = false;
@@ -73,40 +75,46 @@
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
-            this.lblUsername.Location = new System.Drawing.Point(260, 68);
+            this.lblUsername.Location = new System.Drawing.Point(390, 105);
+            this.lblUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(81, 13);
+            this.lblUsername.Size = new System.Drawing.Size(116, 20);
             this.lblUsername.TabIndex = 1;
             this.lblUsername.Text = "Tên đăng nhập";
             // 
             // txtTK
             // 
-            this.txtTK.Location = new System.Drawing.Point(263, 84);
+            this.txtTK.Location = new System.Drawing.Point(394, 129);
+            this.txtTK.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtTK.Name = "txtTK";
-            this.txtTK.Size = new System.Drawing.Size(326, 20);
+            this.txtTK.Size = new System.Drawing.Size(487, 26);
             this.txtTK.TabIndex = 2;
+            this.txtTK.Text = "Phong123";
             // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(260, 115);
+            this.lblPassword.Location = new System.Drawing.Point(390, 177);
+            this.lblPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(52, 13);
+            this.lblPassword.Size = new System.Drawing.Size(75, 20);
             this.lblPassword.TabIndex = 1;
             this.lblPassword.Text = "Mật khẩu";
             // 
             // txtMK
             // 
-            this.txtMK.Location = new System.Drawing.Point(263, 131);
+            this.txtMK.Location = new System.Drawing.Point(394, 202);
+            this.txtMK.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtMK.Name = "txtMK";
-            this.txtMK.Size = new System.Drawing.Size(326, 20);
+            this.txtMK.Size = new System.Drawing.Size(487, 26);
             this.txtMK.TabIndex = 2;
             // 
             // btnDN
             // 
-            this.btnDN.Location = new System.Drawing.Point(329, 172);
+            this.btnDN.Location = new System.Drawing.Point(494, 265);
+            this.btnDN.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnDN.Name = "btnDN";
-            this.btnDN.Size = new System.Drawing.Size(75, 23);
+            this.btnDN.Size = new System.Drawing.Size(112, 35);
             this.btnDN.TabIndex = 8;
             this.btnDN.Text = "Đăng nhập";
             this.btnDN.UseVisualStyleBackColor = true;
@@ -114,9 +122,10 @@
             // 
             // btn_Exit
             // 
-            this.btn_Exit.Location = new System.Drawing.Point(455, 172);
+            this.btn_Exit.Location = new System.Drawing.Point(682, 265);
+            this.btn_Exit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Exit.Name = "btn_Exit";
-            this.btn_Exit.Size = new System.Drawing.Size(89, 23);
+            this.btn_Exit.Size = new System.Drawing.Size(134, 35);
             this.btn_Exit.TabIndex = 9;
             this.btn_Exit.Text = "Thoát";
             this.btn_Exit.UseVisualStyleBackColor = true;
@@ -124,9 +133,9 @@
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(602, 212);
+            this.ClientSize = new System.Drawing.Size(903, 326);
             this.Controls.Add(this.btn_Exit);
             this.Controls.Add(this.btnDN);
             this.Controls.Add(label1);
@@ -135,6 +144,7 @@
             this.Controls.Add(this.txtTK);
             this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.Logo);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
